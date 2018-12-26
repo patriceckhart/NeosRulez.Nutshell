@@ -9,6 +9,22 @@ Neos:
     fusion:
       autoInclude:
         NeosRulez.Nutshell: true
+    modules:
+      nutshell:
+        label: NeosRulez.Nutshell:Main:pluginName
+        controller: '\Neos\Neos\Controller\Module\ManagementController'
+        description: 'Nutshell Admin'
+        icon: 'icon-cog'
+        resource: 'Neos_Neos_Backend_Module_Management'
+        submodules:
+          country:
+            label: 'Einstellungen'
+            controller: '\NeosRulez\Nutshell\Controller\NutshellController'
+            description: 'Einstellungen'
+            icon: 'icon-cog'
+            actions:
+              index:
+                label: 'Einstellungen Index'
 NeosRulez:
   Nutshell:
     bodyBackground: '#CCCCCC'

@@ -1,0 +1,14 @@
+Neos:
+  Neos:
+    userInterface:
+      translation:
+        autoInclude:
+          NeosRulez.Nutshell:
+            - Main
+      defaultLanguage: 'de'
+    fusion:
+      autoInclude:
+        NeosRulez.Nutshell: true
+NeosRulez:
+  Nutshell:
+    bodyBackground: '#CCCCCC'

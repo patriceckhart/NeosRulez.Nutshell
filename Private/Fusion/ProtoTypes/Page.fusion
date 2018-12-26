@@ -1,0 +1,16 @@
+prototype(Neos.Neos:Page) {
+    head {
+        NeosRulezNutshellStyles = Neos.Fusion:Template {
+            @position = 'end'
+            templatePath = 'resource://NeosRulez.Nutshell/Private/Templates/Frontend/Styles.html'
+            bodyBackground = ${Configuration.setting('NeosRulez.Nutshell.bodyBackground')}
+            @cache {
+                mode = 'uncached'
+                context {
+                    1 = 'node'
+                    2 = 'documentNode'
+                }
+            }
+        }
+    }
+}
